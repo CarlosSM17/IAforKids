@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exploradores de la IA</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%228%22 fill=%22%2318213d%22/%3E%3Cpath d=%22M16 4l3 8 8 1-6 6 2 9-7-5-7 5 2-9-6-6 8-1z%22 fill=%22%23ffc93c%22/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&amp;family=Nunito:wght@400;600;700;800&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<header class="barra">
+  <div class="barra-fila">
+    <a class="logo" href="#inicio" aria-label="Exploradores de la IA, ir al inicio">
+      <span data-chispa="feliz" style="width:40px;height:40px;display:block"></span>
+      <span><b>Exploradores de la IA</b><small>Curso para 5.º y 6.º de primaria</small></span>
+    </a>
+    <div class="marcador" aria-label="Estrellas ganadas"><span class="estrella" aria-hidden="true">★</span><span id="total-estrellas">0</span><small>/ <span id="max-estrellas">40</span></small></div>
+  </div>
+  <nav class="nav" aria-label="Unidades del curso">
+    <a href="#inicio">Inicio</a>
+    <a href="#unidad-1"><span class="num" style="--c:var(--u1)">1</span>¿Qué es la IA?</a>
+    <a href="#unidad-2"><span class="num" style="--c:var(--u2)">2</span>IA en la escuela</a>
+    <a href="#unidad-3"><span class="num" style="--c:var(--u3)">3</span>Imágenes y multimedia</a>
+    <a href="#unidad-4"><span class="num" style="--c:var(--u4)">4</span>Programación</a>
+    <a href="#unidad-5"><span class="num" style="--c:var(--u5)">5</span>Ética</a>
+    <a href="#final"><span class="num" style="--c:var(--fin)">★</span>Gran quiz final</a>
+    <a href="#docente">Guía docente</a>
+  </nav>
+</header>
+
+<main>
+<!-- ===================================================== INICIO -->
+<section class="vista" id="v-inicio">
+  <div class="contenedor">
+    <div class="portada">
+      <div>
+        <h1>Exploradores de la <span>IA</span></h1>
+        <p class="lead">Un curso interactivo para niñas y niños de 10 y 11 años. Descubre cómo aprenden las máquinas, crea con ellas, programa tu propio robot y aprende a usar la inteligencia artificial con cabeza propia.</p>
+        <div class="etiquetas">
+          <span class="chip">5 unidades</span><span class="chip">12 sesiones de 1 hora</span><span class="chip">19 actividades interactivas</span><span class="chip">6 quizzes estilo Kahoot</span><span class="chip">Sin cuentas ni instalación</span>
+        </div>
+        <div class="botones">
+          <a class="btn grande" href="#unidad-1">Empezar la aventura</a>
+          <a class="btn sec grande" href="#docente">Guía para docentes</a>
+        </div>
+      </div>
+      <div class="chispa-grande" data-chispa="feliz"></div>
+    </div>
+
+    <div class="titulo-seccion"><h2>El mapa de la expedición</h2><p>Completa actividades para ganar estrellas. ¡Hola, soy Chispa y voy contigo!</p></div>
+    <div class="mapa">
+      <a class="isla" href="#unidad-1" style="--c:var(--u1)"><span class="n">Unidad 1</span><h3>¿Qué es la IA?</h3><p>Qué es, cómo aprende de los datos y por qué a veces se equivoca.</p><div class="barra-prog" data-prog-unidad="1"><i></i></div><span class="prog-txt"></span></a>
+      <a class="isla" href="#unidad-2" style="--c:var(--u2)"><span class="n">Unidad 2</span><h3>La IA en la escuela</h3><p>Herramientas útiles, cómo pedir ayuda y cómo cuidarte.</p><div class="barra-prog" data-prog-unidad="2"><i></i></div><span class="prog-txt"></span></a>
+      <a class="isla" href="#unidad-3" style="--c:var(--u3)"><span class="n">Unidad 3</span><h3>Imágenes y multimedia</h3><p>Cómo crea imágenes una IA, prompts creativos y cómo detectar falsos.</p><div class="barra-prog" data-prog-unidad="3"><i></i></div><span class="prog-txt"></span></a>
+      <a class="isla" href="#unidad-4" style="--c:var(--u4)"><span class="n">Unidad 4</span><h3>Piensa y programa</h3><p>Lógica, algoritmos, bloques visuales y tus primeras líneas de Python.</p><div class="barra-prog" data-prog-unidad="4"><i></i></div><span class="prog-txt"></span></a>
+      <a class="isla" href="#unidad-5" style="--c:var(--u5)"><span class="n">Unidad 5</span><h3>Ética y pensamiento crítico</h3><p>La IA es tu asistente: verifica, cuida tus datos y usa tu imaginación.</p><div class="barra-prog" data-prog-unidad="5"><i></i></div><span class="prog-txt"></span></a>
+      <a class="isla" href="#final" style="--c:var(--fin)"><span class="n">Cierre</span><h3>Gran quiz final</h3><p>Demuestra todo lo que aprendiste, solo o en equipos.</p><div class="barra-prog" data-prog-unidad="6"><i></i></div><span class="prog-txt"></span></a>
+    </div>
+
+    <div class="titulo-seccion"><h2>¿Cómo funciona?</h2></div>
+    <div class="pasos">
+      <div class="paso"><span class="ico" aria-hidden="true">📖</span><b>Lee y observa</b><p>Cada lección explica una idea con ejemplos y dibujos.</p></div>
+      <div class="paso"><span class="ico" aria-hidden="true">🎮</span><b>Juega y experimenta</b><p>Entrena a una IA, crea imágenes, programa un robot y escribe Python.</p></div>
+      <div class="paso"><span class="ico" aria-hidden="true">⏱️</span><b>Quiz estilo Kahoot</b><p>Al final de cada unidad: responde rápido y gana puntos, solo o en equipos.</p></div>
+      <div class="paso"><span class="ico" aria-hidden="true">🏅</span><b>Gana tu licencia</b><p>Junta estrellas y obtén tu Licencia de Explorador de la IA.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================== UNIDAD 1 -->
+<section class="vista unidad" id="v-unidad-1" style="--c:var(--u1)">
+  <div class="contenedor">
+    <header class="cabecera-unidad">
+      <div>
+        <div class="eyebrow">Unidad 1 · Fundamentos de IA</div>
+        <h1>¿Qué es la inteligencia artificial?</h1>
+        <p class="lead">Descubre qué es una IA, cómo aprende de los datos y por qué a veces se equivoca.</p>
+        <div class="subnav" role="navigation" aria-label="Lecciones de la unidad 1">
+          <button data-ir="l1-1">1.1 ¿Qué es?</button><button data-ir="l1-2">1.2 Cómo aprende</button><button data-ir="l1-3">1.3 Por qué se equivoca</button><button data-ir="k-u1">Quiz</button><button data-ir="g-u1">Glosario</button>
+        </div>
+      </div>
+      <div class="chispa-mini" data-chispa="feliz"></div>
+    </header>
+    <div class="objetivos"><h3>Al terminar podrás…</h3>
+      <ul><li>Explicar con tus palabras qué es una inteligencia artificial.</li><li>Reconocer aparatos y apps que usan IA y otros que no.</li><li>Describir cómo una IA aprende de los datos.</li><li>Dar razones de por qué una IA se puede equivocar.</li></ul>
+    </div>
+
+    <section class="leccion" id="l1-1">
+      <div class="leccion-titulo"><span class="num">1.1</span><h2>¿Qué es una inteligencia artificial?</h2></div>
+      <div class="explica">
+        <div class="texto">
+          <p>Una <span class="resalta">inteligencia artificial (IA)</span> es un programa de computadora que <b>aprende de ejemplos</b> para reconocer patrones, tomar decisiones o crear cosas nuevas.</p>
+          <p>Un programa normal es como una receta: una persona le escribe todas las reglas y la computadora las sigue, paso a paso. Una calculadora sabe sumar porque alguien le programó cómo hacerlo.</p>
+          <p>Una IA es diferente: en lugar de recibir todas las reglas, <b>ve muchísimos ejemplos</b> y descubre las reglas por sí misma. Así aprende a reconocer tu voz, a traducir idiomas o a encontrar caras en una foto.</p>
+          <p>Ojo: la IA <b>no piensa ni siente</b> como una persona. Es muy buena encontrando patrones, pero no entiende el mundo como tú.</p>
+        </div>
+        <figure class="figura">
+          <svg viewBox="0 0 480 300" role="img" aria-label="Comparación: un programa normal usa reglas escritas por una persona; una IA descubre las reglas a partir de muchos ejemplos">
+            <text x="10" y="20" font-size="13" font-weight="800" fill="#4d587a" letter-spacing="1">PROGRAMA NORMAL</text>
+            <rect x="10" y="32" width="130" height="74" rx="12" fill="#fff" stroke="#18213d" stroke-width="2"/>
+            <text text-anchor="middle" font-size="13" font-weight="700" fill="#18213d"><tspan x="75" y="60">Reglas que</tspan><tspan x="75" dy="16">escribe una</tspan><tspan x="75" dy="16">persona</tspan></text>
+            <text x="150" y="76" font-size="24" font-weight="800" fill="#18213d">+</text>
+            <rect x="172" y="32" width="110" height="74" rx="12" fill="#fff" stroke="#18213d" stroke-width="2"/>
+            <text text-anchor="middle" font-size="13" font-weight="700" fill="#18213d"><tspan x="227" y="64">Datos</tspan><tspan x="227" dy="18" font-weight="600">25 + 17</tspan></text>
+            <path d="M290 69 H322" stroke="#18213d" stroke-width="3" marker-end="url(#flecha1)"/>
+            <rect x="332" y="32" width="138" height="74" rx="12" fill="#eef3fc" stroke="#18213d" stroke-width="2"/>
+            <text text-anchor="middle" font-size="13" font-weight="700" fill="#18213d"><tspan x="401" y="64">Respuesta</tspan><tspan x="401" dy="18" font-weight="600">42</tspan></text>
+            <line x1="10" y1="140" x2="470" y2="140" stroke="#d8e0ee" stroke-width="2" stroke-dasharray="6 6"/>
+            <text x="10" y="172" font-size="13" font-weight="800" style="fill:var(--c)" letter-spacing="1">INTELIGENCIA ARTIFICIAL</text>
+            <rect x="10" y="184" width="130" height="100" rx="12" fill="#fff" stroke="#18213d" stroke-width="2"/>
+            <text text-anchor="middle" font-size="13" font-weight="700" fill="#18213d"><tspan x="75" y="212">Muchos ejemplos</tspan><tspan x="75" dy="16">con su respuesta</tspan><tspan x="75" dy="26" font-size="20">🐶🐱🐶🐱</tspan></text>
+            <path d="M146 234 H170" stroke="#18213d" stroke-width="3" marker-end="url(#flecha1)"/>
+            <rect x="180" y="184" width="138" height="100" rx="12" style="fill:var(--c)" opacity=".16"/>
+            <rect x="180" y="184" width="138" height="100" rx="12" fill="none" style="stroke:var(--c)" stroke-width="2.5"/>
+            <text text-anchor="middle" font-size="13" font-weight="800" fill="#18213d"><tspan x="249" y="218">La IA descubre</tspan><tspan x="249" dy="16">las reglas</tspan><tspan x="249" dy="16" font-weight="600">(patrones)</tspan></text>
+            <path d="M324 234 H348" stroke="#18213d" stroke-width="3" marker-end="url(#flecha1)"/>
+            <rect x="358" y="184" width="112" height="100" rx="12" fill="#eef3fc" stroke="#18213d" stroke-width="2"/>
+            <text text-anchor="middle" font-size="13" font-weight="700" fill="#18213d"><tspan x="414" y="214">Responde</tspan><tspan x="414" dy="16">casos nuevos</tspan><tspan x="414" dy="26" font-size="13">«¡Es un gato!»</tspan></text>
+            <defs><marker id="flecha1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#18213d"/></marker></defs>
+          </svg>
+          <figcaption>Un programa normal sigue reglas escritas por una persona. Una IA encuentra las reglas a partir de muchos ejemplos.</figcaption>
+        </figure>
+      </div>
+      <div class="sabias"><div data-chispa="sorpresa"></div><p><b>¿Sabías que…?</b> El nombre «inteligencia artificial» se propuso en 1955 para un taller de científicos que se realizó en 1956 en Dartmouth, Estados Unidos. ¡La idea tiene casi 70 años!</p></div>
+      <div class="actividad">
+        <div class="act-cab"><div class="act-cab-tit"><span class="tipo">Actividad · Clasifica</span><h3>¿IA o no IA?</h3></div><span class="estado" data-estado="u1-ia"></span></div>
+        <div class="act-cuerpo"><p class="act-instr">Lee cada tarjeta y decide: ¿usa inteligencia artificial o solo sigue reglas fijas? Pregúntate: <b>¿aprende de datos?</b></p><div id="act-ia"></div></div>
+      </div>
+    </section>
+
+    <section class="leccion" id="l1-2">
+      <div class="leccion-titulo"><span class="num">1.2</span><h2>¿Cómo aprende de los datos?</h2></div>
+      <div class="explica">
+        <div class="texto">
+          <p>¿Cómo aprendiste a reconocer a un perro? Nadie te dio una lista de reglas: viste muchos perros, grandes y pequeños, y tu cerebro encontró lo que tienen en común.</p>
+          <p>La IA aprende de forma parecida, con <span class="resalta">datos</span>: ejemplos como fotos, textos, sonidos o números. Su aprendizaje tiene cuatro pasos:</p>
+          <ol>
+            <li><b>Reunir datos.</b> Muchos ejemplos con su respuesta correcta (a la respuesta se le llama <i>etiqueta</i>): «esta foto es un perro», «esta es un gato».</li>
+            <li><b>Entrenar.</b> La IA busca patrones en los ejemplos: orejas, forma, colores…</li>
+            <li><b>Probar.</b> Le mostramos ejemplos nuevos que nunca vio y revisamos si acierta.</li>
+            <li><b>Mejorar.</b> Si falla, le damos más y mejores datos, y vuelve a entrenar.</li>
+          </ol>
+          <p>Lo que la IA aprende se guarda en un <b>modelo</b>. Cuando le damos algo nuevo, el modelo hace una <b>predicción</b>: su mejor respuesta según lo que aprendió.</p>
+        </div>
+        <figure class="figura">
+          <svg viewBox="0 0 420 330" role="img" aria-label="Ciclo de aprendizaje de una IA: reunir datos, entrenar, probar y mejorar">
+            <defs><marker id="flecha2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#4d587a"/></marker></defs>
+            <g fill="none" stroke="#4d587a" stroke-width="3" marker-end="url(#flecha2)">
+              <path d="M262 58 Q340 66 356 110"/><path d="M356 214 Q340 262 262 272"/><path d="M158 272 Q80 262 64 214"/><path d="M64 110 Q80 66 158 58"/>
+            </g>
+            <g text-anchor="middle" fill="#18213d">
+              <circle cx="210" cy="60" r="50" fill="#fff" style="stroke:var(--c)" stroke-width="4"/>
+              <text x="210" y="50" font-size="22" font-weight="800" style="fill:var(--c)">1</text><text x="210" y="70" font-size="13" font-weight="800">Reunir datos</text><text x="210" y="86" font-size="11">fotos, textos, sonidos</text>
+              <circle cx="360" cy="162" r="50" fill="#fff" style="stroke:var(--c)" stroke-width="4"/>
+              <text x="360" y="152" font-size="22" font-weight="800" style="fill:var(--c)">2</text><text x="360" y="172" font-size="13" font-weight="800">Entrenar</text><text x="360" y="188" font-size="11">busca patrones</text>
+              <circle cx="210" cy="270" r="50" fill="#fff" style="stroke:var(--c)" stroke-width="4"/>
+              <text x="210" y="260" font-size="22" font-weight="800" style="fill:var(--c)">3</text><text x="210" y="280" font-size="13" font-weight="800">Probar</text><text x="210" y="296" font-size="11">con ejemplos nuevos</text>
+              <circle cx="60" cy="162" r="50" fill="#fff" style="stroke:var(--c)" stroke-width="4"/>
+              <text x="60" y="152" font-size="22" font-weight="800" style="fill:var(--c)">4</text><text x="60" y="172" font-size="13" font-weight="800">Mejorar</text><text x="60" y="188" font-size="11">más y mejores datos</text>
+              <text x="210" y="158" font-size="14" font-weight="800">Así aprende</text><text x="210" y="176" font-size="14" font-weight="800">una IA</text>
+            </g>
+          </svg>
+          <figcaption>El ciclo se repite muchas veces. Mientras más variados sean los datos, mejor aprende.</figcaption>
+        </figure>
+      </div>
+      <div class="sabias"><div data-chispa="sorpresa"></div><p><b>¿Sabías que…?</b> Para aprender a reconocer objetos en fotos, algunas IA se entrenaron con más de un millón de imágenes que personas etiquetaron una por una.</p></div>
+      <div class="actividad">
+        <div class="act-cab"><div class="act-cab-tit"><span class="tipo">Actividad · Entrena una IA</span><h3>Entrena a Chispa con tus dibujos</h3></div><span class="estado" data-estado="u1-entrena"></span></div>
+        <div class="act-cuerpo"><p class="act-instr">Vas a ser el entrenador. Chispa aprende comparando tu dibujo con los ejemplos que le das. Puedes cambiar los nombres de los grupos y enseñarle otras cosas (por ejemplo, «sol» y «casa»).</p><div id="act-entrena"></div></div>
+      </div>
+    </section>
+
+    <section class="leccion" id="l1-3">
+      <div class="leccion-titulo"><span class="num">1.3</span><h2>¿Por qué a veces se equivoca?</h2></div>
+      <div class="texto"><p>La IA solo sabe lo que aprendió de sus datos. Por eso se puede equivocar, ¡y a veces con mucha seguridad! Estas son las razones más comunes:</p></div>
+      <div class="tarjetas-mini">
+        <div class="tmini"><span class="em" aria-hidden="true">🔢</span><b>Pocos datos</b><p>Con muy pocos ejemplos no puede encontrar un patrón confiable.</p></div>
+        <div class="tmini"><span class="em" aria-hidden="true">⚖️</span><b>Datos incompletos (sesgo)</b><p>Si los ejemplos dejan fuera algunos casos, la IA será injusta o fallará con ellos.</p></div>
+        <div class="tmini"><span class="em" aria-hidden="true">🆕</span><b>Situaciones nuevas</b><p>Si ve algo muy distinto a lo que aprendió, se confunde.</p></div>
+        <div class="tmini"><span class="em" aria-hidden="true">🌀</span><b>Inventa respuestas</b><p>Los chatbots a veces inventan datos que suenan reales. A esto se le llama <b>alucinación</b>.</p></div>
+      </div>
+      <div class="actividad">
+        <div class="act-cab"><div class="act-cab-tit"><span class="tipo">Actividad · Experimenta</span><h3>Chispa y las manzanas</h3></div><span class="estado" data-estado="u1-manzanas"></span></div>
+        <div class="act-cuerpo"><p class="act-instr">Chispa aprendió qué es una manzana con dos grupos de fotos distintos. Elige un grupo, pon a prueba a Chispa y compara los resultados.</p><div id="act-manzanas"></div></div>
+      </div>
+      <div class="actividad">
+        <div class="act-cab"><div class="act-cab-tit"><span class="tipo">Actividad · Detective</span><h3>Detective de errores</h3></div><span class="estado" data-estado="u1-detective"></span></div>
+        <div class="act-cuerpo"><p class="act-instr">Lee cada historia y descubre por qué se equivocó la IA.</p><div id="act-detective"></div></div>
+      </div>
+    </section>
+
+    <section class="leccion" id="k-u1">
+      <div class="leccion-titulo"><span class="num">Quiz</span><h2>Quiz de la unidad 1</h2><span class="estado" data-estado="u1-kahoot" style="margin-left:auto;font-weight:800;color:var(--tinta-suave)"></span></div>
+      <div class="kh-caja" data-kahoot="u1"></div>
+    </section>
+
+    <section class="leccion" id="g-u1">
+      <div class="leccion-titulo"><span class="num">Aa</span><h2>Palabras clave</h2></div>
+      <div class="glosario">
+        <div><b>Inteligencia artificial</b><i>artificial intelligence</i><p>Programa que aprende de ejemplos a reconocer patrones y tomar decisiones.</p></div>
+        <div><b>Datos</b><i>data</i><p>Ejemplos con los que aprende una IA: fotos, textos, sonidos, números.</p></div>
+        <div><b>Patrón</b><i>pattern</i><p>Algo que se repite y que ayuda a reconocer o predecir.</p></div>
+        <div><b>Entrenar</b><i>train</i><p>Mostrarle muchos ejemplos a una IA para que aprenda.</p></div>
+        <div><b>Modelo</b><i>model</i><p>Lo que la IA aprendió, guardado para usarlo después.</p></div>
+        <div><b>Predicción</b><i>prediction</i><p>La respuesta más probable que da la IA ante algo nuevo.</p></div>
+        <div><b>Sesgo</b><i>bias</i><p>Error que aparece cuando los datos no representan a todos los casos.</p></div>
+        <div><b>Alucinación</b><i>hallucination</i><p>Cuando una IA inventa información que suena real.</p></div>
+      </div>
+      <div class="desconectado"><span class="ico" aria-hidden="true">✂️</span><div><h4>Reto desconectado: la máquina que adivina reglas</h4>
+        <ol><li>El maestro muestra tarjetas: «Esto es un GLORP» y «Esto NO es un GLORP» (por ejemplo, figuras con o sin un punto en medio).</li><li>El grupo es la IA: después de ver varios ejemplos, intenta adivinar con tarjetas nuevas.</li><li>Comenten: ¿con cuántos ejemplos descubrieron la regla? ¿Qué pasaría si todos los ejemplos fueran azules?</li></ol></div></div>
+    </section>
+  </div>
+</section>
+
+<!-- ===================================================== UNIDAD 2 -->
+<section class="vista unidad" id="v-unidad-2" style="--c:var(--u2)">
+  <div class="contenedor">
+    <header class="cabecera-unidad">
+      <div>
+        <div class="eyebrow">Unidad 2 · Herramientas para la escuela</div>
+        <h1>La IA en la escuela</h1>
+        <p class="lead">Conoce herramientas que te ayudan a aprender, aprende a darles buenas instrucciones y a usarlas con cuidado.</p>
+        <div class="subnav" role="navigation" aria-label="Lecciones de la unidad 2">
+          <button data-ir="l2-1">2.1 Herramientas</button><button data-ir="l2-2">2.2 El arte de preguntar</button><button data-ir="l2-3">2.3 ¿Ayuda o trampa?</button><button data-ir="k-u2">Quiz</button><button data-ir="g-u2">Glosario</button>
+        </div>
+      </div>
+      <div class="chispa-mini" data-chispa="feliz"></div>
+    </header>
+    <div class="objetivos"><h3>Al terminar podrás…</h3>
+      <ul><li>Nombrar herramientas de IA útiles para estudiar.</li><li>Escribir instrucciones (prompts) claras y completas.</li><li>Distinguir cuándo la IA te ayuda a aprender y cuándo hace trampa por ti.</li><li>Proteger tus datos personales.</li></ul>
+    </div>
+
+    <section class="leccion" id="l2-1">
+      <div class="leccion-titulo"><span class="num">2.1</span><h2>Tu caja de herramientas con IA</h2></div>
+      <div class="texto"><p>Hay muchas herramientas con IA que pueden ayudarte en la escuela. Toca cada tarjeta para descubrir para qué sirve.</p></div>
+      <div class="tarjetas-mini">
+        <button class="volteo" aria-pressed="false"><div class="cara-int"><div class="cara"><span class="em" aria-hidden="true">💬</span><b>Asistente de chat</b><small>Toca para voltear</small></div><div class="cara atras"><b>Asistente de chat</b><p>Te explica temas, te da ejemplos y te hace preguntas para practicar.</p></div></div></button>
+        <button class="volteo" aria-pressed="false"><div class="cara-int"><div class="cara"><span class="em" aria-hidden="true">🌐</span><b>Traductor</b><small>Toca para voltear</small></div><div class="cara atras"><b>Traductor</b><p>Te ayuda a entender textos en otros idiomas y a aprender palabras nuevas.</p></div></div></button>
+        <button class="volteo" aria-pressed="false"><div class="cara-int"><div class="cara"><span class="em" aria-hidden="true">🎙️</span><b>Dictado y lectura en voz alta</b><small>Toca para voltear</small></div><div class="cara atras"><b>Dictado y voz</b><p>Convierte tu voz en texto o lee textos en voz alta. Útil para escribir ideas rápido.</p></div></div></button>
+        <button class="volteo" aria-pressed="false"><div class="cara-int"><div class="cara"><span class="em" aria-hidden="true">🔎</span><b>Buscador con IA</b><small>Toca para voltear</small></div><div class="cara atras"><b>Buscador con IA</b><p>Resume información de internet. ¡Siempre revisa de dónde viene!</p></div></div></button>
+        <button class="volteo" aria-pressed="false"><div class="cara-int"><div class="cara"><span class="em" aria-hidden="true">🎨</span><b>Creador de imágenes</b><small>Toca para voltear</small></div><div class="cara atras"><b>Creador de imágenes</b><p>Crea imágenes a partir de una descripción. Di siempre que usaste IA.</p></div></div></button>
+        <button class="volteo" aria-pressed="false"><div class="cara-int"><div class="cara"><span class="em" aria-hidden="true">🧩</span><b>Tutor para practicar</b><small>Toca para voltear</small></div><div class="cara atras"><b>Tutor para practicar</b><p>Te propone ejercicios y te da pistas, sin darte la respuesta de inmediato.</p></div></div></button>
+      </div>
+      <div class="sabias"><div data-chispa="pensando"></div><div><p><b>Reglas de oro antes de usar cualquier herramienta</b></p>
+        <ol style="margin:6px 0 0;padding-left:20px;display:grid;gap:4px">
+          <li><b>Con permiso y con un adulto.</b> Muchas herramientas de IA tienen una edad mínima (con frecuencia 13 años o más). Úsalas con tu maestro o tu familia.</li>
+          <li><b>Cuida tus datos.</b> Nunca escribas tu nombre completo, dirección, teléfono, escuela ni contraseñas.</li>
+          <li><b>Tú eres el autor.</b> La IA te ayuda; tú haces el trabajo.</li>
+          <li><b>Revisa lo que te dice.</b> Puede equivocarse.</li>
+        </ol></div></div>
+    </section>
+
+    <section class="leccion" id="l2-2">
+      <div class="leccion-titulo"><span class="num">2.2</span><h2>El arte de preguntar: los prompts</h2></div>
+      <div class="explica">
+        <div class="texto">
+          <p>Un <span class="resalta">prompt</span> es la instrucción que le das a una IA. Mientras más clara sea tu instrucción, mejor será la respuesta. Imagina que le pides a alguien «tráeme algo»… ¡no sabría qué traer!</p>
+          <p>Un buen prompt tiene hasta cinco partes:</p>
+          <ul>
+            <li><b>Rol:</b> ¿quién quieres que sea? «Actúa como un maestro paciente».</li>
+            <li><b>Tarea:</b> ¿qué quieres que haga? «Explícame», «hazme preguntas».</li>
+            <li><b>Tema:</b> ¿sobre qué? «los volcanes».</li>
+            <li><b>Para quién:</b> «para un niño de 10 años».</li>
+            <li><b>Formato:</b> ¿cómo lo quieres? «en 3 puntos», «con un ejemplo».</li>
+          </ul>
+        </div>
+        <figure class="figura">
+          <div class="prompt-final" style="font-size:1.05rem"><span class="p-parte" style="background:#ffb4a2;color:#18213d">Actúa como un maestro paciente.</span> <span class="p-parte" style="background:#ffd166;color:#18213d">Explícame</span> <span class="p-parte" style="background:#9be7c4;color:#18213d">los volcanes</span> <span class="p-parte" style="background:#a0c4ff;color:#18213d">para un niño de 10 años</span> <span class="p-parte" style="background:#d0b3ff;color:#18213d">con un ejemplo de la vida diaria</span>.</div>
+          <figcaption>Cada color es una parte del prompt: rol, tarea, tema, para quién y formato.</figcaption>
+          <div class="prompt-final" style="background:#fdeaea;color:#8c1f1f;min-height:0">«volcanes»</div>
+          <figcaption>Un prompt de una sola palabra: la IA tiene que adivinar qué quieres.</figcaption>
+        </figure>
+      </div>
+      <div class="actividad">
+        <div class="act-cab"><div class="act-cab-tit"><span class="tipo">Actividad · Construye</span><h3>Constructor de prompts</h3></div><span class="estado" data-estado="u2-prompt"></span></div>
+        <div class="act-cuerpo"><p class="act-instr">Elige las partes de tu instrucción y mira cómo mejora. Meta: ¡5 de 5 estrellas!</p><div id="act-prompt"></div></div>
+      </div>
+      <div class="actividad">
+        <div class="act-cab"><div class="act-cab-tit"><span class="tipo">Actividad · Elige</span><h3>¿Cuál instrucción es mejor?</h3></div><span class="estado" data-estado="u2-mejor"></span></div>
+        <div class="act-cuerpo"><div id="act-mejor"></div></div>
+      </div>
+    </section>
+
+    <section class="leccion" id="l2-3">
+      <div class="leccion-titulo"><span class="num">2.3</span><h2>¿Me ayuda a aprender o hace trampa por mí?</h2></div>
+      <div class="explica una"><div class="texto">
+        <p>La IA es como una bicicleta con rueditas: te ayuda mientras aprendes, pero <b>tú pedaleas</b>. Si la IA hace todo el trabajo, tu cerebro no practica y no aprendes.</p>
+        <p>Una buena pregunta para hacerte: <b>«Después de usar la IA, ¿yo sé más que antes?»</b> Si la respuesta es sí, la estás usando bien.</p>
+      </div></div>
+      <div class="actividad">
+        <div class="act-cab"><div class="act-cab-tit"><span class="tipo">Actividad · Clasifica</span><h3>¿Ayuda o no está bien?</h3></div><span class="estado" data-estado="u2-ayuda"></span></div>
+        <div class="act-cuerpo"><div id="act-ayuda"></div></div>
+      </div>
+    </section>
+
+    <section class="leccion" id="k-u2">
+      <div class="leccion-titulo"><span class="num">Quiz</span><h2>Quiz de la unidad 2</h2><span class="estado" data-estado="u2-kahoot" style="margin-left:auto;font-weight:800;color:var(--tinta-suave)"></span></div>
+      <div class="kh-caja" data-kahoot="u2"></div>
+    </section>
+
+    <section class="leccion" id="g-u2">
+      <div class="leccion-titulo"><span class="num">Aa</span><h2>Palabras clave</h2></div>
+      <div class="glosario">
+        <div><b>Prompt (instrucción)</b><i>prompt</i><p>Lo que le escribes o dices a una IA para pedirle algo.</p></div>
+        <div><b>Chatbot</b><i>chatbot</i><p>Programa con el que puedes «conversar» escribiendo.</p></div>
+        <div><b>Datos personales</b><i>personal data</i><p>Información que te identifica: nombre completo, dirección, teléfono, fotos.</p></div>
+        <div><b>Privacidad</b><i>privacy</i><p>Tu derecho a cuidar tu información.</p></div>
+        <div><b>Traductor automático</b><i>machine translation</i><p>Herramienta que traduce textos de un idioma a otro.</p></div>
+        <div><b>Autor</b><i>author</i><p>Quien crea un trabajo. Con IA, el autor sigues siendo tú.</p></div>
+      </div>
+      <div class="desconectado"><span class="ico" aria-hidden="true">✂️</span><div><h4>Reto desconectado: el robot literal</h4>
+        <ol><li>En parejas: uno es la «IA» y hace <b>exactamente</b> lo que dice la instrucción, sin adivinar.</li><li>El otro le pide dibujar una casa con una instrucción vaga («dibuja una casa»).</li><li>Repitan con una instrucción completa (rol, tarea, detalles y formato) y comparen los dibujos.</li></ol></div></div>
+    </section>
+  </div>
+</section>
+
+<!-- ===================================================== UNIDAD 3 -->
+<section class="vista unidad" id="v-unidad-3" style="--c:var(--u3)">
+  <div class="contenedor">
+    <header class="cabecera-unidad">
+      <div>
+        <div class="eyebrow">Unidad 3 · Generación de imágenes y multimedia</div>
+        <h1>Imágenes, voces y videos con IA</h1>
+        <p class="lead">Descubre cómo una IA crea imágenes, escribe prompts creativos y aprende a detectar contenido falso.</p>
+        <div class="subnav" role="navigation" aria-label="Lecciones de la unidad 3">
+          <button data-ir="l3-1">3.1 Del ruido a la imagen</button><button data-ir="l3-2">3.2 Prompts de imagen</button><button data-ir="l3-3">3.3 Multimedia y deepfakes</button><button data-ir="k-u3">Quiz</button><button data-ir="g-u3">Glosario</button>
+        </div>
+      </div>
+      <div class="chispa-mini" data-chispa="sorpresa"></div>
+    </header>
+    <div class="objetivos"><h3>Al terminar podrás…</h3>
+      <ul><li>Explicar de forma sencilla cómo una IA genera imágenes.</li><li>Escribir prompts de imagen con sujeto, acción, lugar, detalles y estilo.</li><li>Reconocer pistas de imágenes y videos hechos con IA.</li><li>Crear con respeto y decir cuándo usaste IA.</li></ul>
+    </div>
+
+    <section class="leccion" id="l3-1">
+      <div class="leccion-titulo"><span class="num">3.1</span><h2>¿Cómo crea una imagen la IA?</h2></div>
+      <div class="explica una"><div class="texto">
+        <p>Las IA que crean imágenes aprendieron viendo <b>millones de imágenes con su descripción</b> escrita. Así relacionaron palabras como «gato», «playa» o «acuarela» con formas, colores y texturas.</p>
+        <p>Cuando le pides una imagen, la IA <b>empieza con puro ruido</b>, como la estática de una tele vieja. Luego, paso a paso, va quitando el ruido y acomodando los colores para que se parezcan a lo que describiste. Al final aparece una imagen <b>nueva</b>, que no estaba guardada en ningún lado.</p>
+      </div></div>
+      <div class="actividad">
+        <div class="act-cab"><div class="act-cab-tit"><span class="tipo">Actividad · Observa</span><h3>Del ruido a la imagen</h3></div><span class="estado" data-estado="u3-ruido"></span></div>
+        <div class="act-cuerpo"><p class="act-instr">Elige un prompt y mueve el control (o presiona «Generar paso a paso») para ver cómo aparece la imagen. Es una simulación simplificada de lo que hace una IA real.</p><div id="act-ruido"></div></div>
+      </div>
+      <div class="sabias"><div data-chispa="sorpresa"></div><p><b>¿Sabías que…?</b> Por eso, si le pides lo mismo dos veces a una IA de imágenes, casi siempre obtienes dos imágenes distintas: empieza desde un ruido diferente cada vez.</p></div>
+    </section>
+
+    <section class="leccion" id="l3-2">
+      <div class="leccion-titulo"><span class="num">3.2</span><h2>Escribe prompts de imagen</h2></div>
+      <div class="explica una"><div class="texto">
+        <p>Un buen prompt de imagen describe lo que imaginas con estas partes: <b>sujeto</b> (¿quién?), <b>acción</b> (¿qué hace?), <b>lugar</b> (¿dónde?), <b>detalles</b> (¿cuándo?, ¿cómo?) y <b>estilo</b> (caricatura, acuarela, pixel art…).</p>
+        <p>Ejemplo: «<i>Una tortuga leyendo un libro bajo el mar, con muchos colores, estilo acuarela</i>».</p>
+      </div></div>
+      <div class="actividad">
+        <div class="act-cab"><div class="act-cab-tit"><span class="tipo">Actividad · Crea</span><h3>Estudio de imagen</h3></div><span class="estado" data-estado="u3-estudio"></span></div>
+        <div class="act-cuerpo"><p class="act-instr">Cambia cada parte del prompt y observa qué cambia en la imagen. Prueba al menos tres combinaciones distintas.</p><div id="act-estudio"></div></div>
+      </div>
+    </section>
+
+    <section class="leccion" id="l3-3">
+      <div class="leccion-titulo"><span class="num">3.3</span><h2>Voces, música, videos… y deepfakes</h2></div>
+      <div class="explica">
+        <div class="texto">
+          <p>Además de imágenes, la IA puede crear <b>voces</b>, <b>música</b> y <b>videos</b>. Puede ser muy divertido, pero también se usa para engañar.</p>
+          <p>Un <span class="resalta">deepfake</span> (ultrafalso) es un video, audio o imagen falso que imita la cara o la voz de una persona real para que parezca que dijo o hizo algo que nunca pasó.</p>
+          <p>Por eso: <b>no creas todo lo que ves</b>, verifica antes de compartir, y nunca uses la cara o la voz de otra persona sin su permiso.</p>
+        </div>
+        <div class="tarjetas-mini">
+          <div class="tmini"><span class="em" aria-hidden="true">✋</span><b>Manos raras</b><p>Dedos de más o de menos.</p></div>
+          <div class="tmini"><span class="em" aria-hidden="true">🔤</span><b>Letras revueltas</b><p>Letreros que no se pueden leer.</p></div>
+          <div class="tmini"><span class="em" aria-hidden="true">🌗</span><b>Luz y sombras</b><p>Sombras que no coinciden con el sol.</p></div>
+          <div class="tmini"><span class="em" aria-hidden="true">👄</span><b>Voz y labios</b><p>La boca no coincide con lo que se escucha.</p></div>
+        </div>
+      </div>
+      <div class="actividad">
+        <div class="act-cab"><div class="act-cab-tit"><span class="tipo">Actividad · Encuentra</span><h3>Detective de imágenes: encuentra los 5 errores</h3></div><span class="estado" data-estado="u3-detective"></span></div>
+        <div class="act-cuerpo"><p class="act-instr">Imagina que una IA creó esta imagen. Toca los 5 errores que la delatan.</p><div id="act-detective-img"></div></div>
+      </div>
+      <div class="actividad">
+        <div class="act-cab"><div class="act-cab-tit"><span class="tipo">Actividad · Decide</span><h3>Crear con respeto</h3></div><span class="estado" data-estado="u3-respeto"></span></div>
+        <div class="act-cuerpo"><div id="act-respeto"></div></div>
+      </div>
+    </section>
+
+    <section class="leccion" id="k-u3">
+      <div class="leccion-titulo"><span class="num">Quiz</span><h2>Quiz de la unidad 3</h2><span class="estado" data-estado="u3-kahoot" style="margin-left:auto;font-weight:800;color:var(--tinta-suave)"></span></div>
+      <div class="kh-caja" data-kahoot="u3"></div>
+    </section>
+
+    <section class="leccion" id="g-u3">
+      <div class="leccion-titulo"><span class="num">Aa</span><h2>Palabras clave</h2></div>
+      <div class="glosario">
+        <div><b>Generador de imágenes</b><i>image generator</i><p>IA que crea imágenes a partir de una descripción.</p></div>
+        <div><b>Ruido</b><i>noise</i><p>Puntos de colores al azar, como estática. Es el punto de partida de la imagen.</p></div>
+        <div><b>Estilo</b><i>style</i><p>La forma en que se ve una imagen: caricatura, acuarela, pixel art…</p></div>
+        <div><b>Deepfake (ultrafalso)</b><i>deepfake</i><p>Contenido falso que imita la cara o voz de una persona real.</p></div>
+        <div><b>Multimedia</b><i>multimedia</i><p>Imágenes, sonidos, música y videos.</p></div>
+        <div><b>Créditos</b><i>credits</i><p>Decir quién o qué hizo cada parte de un trabajo.</p></div>
+      </div>
+      <div class="desconectado"><span class="ico" aria-hidden="true">✂️</span><div><h4>Reto desconectado: dictado de dibujo</h4>
+        <ol><li>Un alumno mira una imagen secreta y la describe en voz alta: ese es su «prompt».</li><li>Los demás dibujan sin ver la imagen.</li><li>Comparen: ¿qué detalles faltaron en la descripción? ¿Por qué cada dibujo salió diferente?</li></ol></div></div>
+    </section>
+  </div>
+</section>
+
+<!-- ===================================================== UNIDAD 4 -->
+<section class="vista unidad" id="v-unidad-4" style="--c:var(--u4)">
+  <div class="contenedor">
+    <header class="cabecera-unidad">
+      <div>
+        <div class="eyebrow">Unidad 4 · Pensamiento computacional y programación</div>
+        <h1>Piensa como computadora y programa</h1>
+        <p class="lead">Lógica, algoritmos, bloques visuales y tus primeras líneas de Python.</p>
+        <div class="subnav" role="navigation" aria-label="Lecciones de la unidad 4">
+          <button data-ir="l4-1">4.1 Lógica y algoritmos</button><button data-ir="l4-2">4.2 Bloques visuales</button><button data-ir="l4-3">4.3 Python</button><button data-ir="k-u4">Quiz</button><button data-ir="g-u4">Glosario</button>
+        </div>
+      </div>
+      <div class="chispa-mini" data-chispa="pensando"></div>
+    </header>
+    <div class="objetivos"><h3>Al terminar podrás…</h3>
+      <ul><li>Usar los cuatro pilares del pensamiento computacional.</li><li>Ordenar pasos en un algoritmo y evaluar condiciones con SI, Y y O.</li><li>Programar un robot con bloques, usando bucles.</li><li>Escribir programas cortos en Python con print, variables, if y for.</li></ul>
+    </div>
+
+    <section class="leccion" id="l4-1">
+      <div class="leccion-titulo"><span class="num">4.1</span><h2>Lógica y algoritmos</h2></div>
+      <div class="texto"><p>Antes de programar, hay que <b>pensar como computadora</b>. Los programadores usan cuatro superpoderes:</p></div>
+      <div class="pilares">
+        <div class="tmini"><span class="em" aria-hidden="true">🧩</span><b>Descomposición</b><p>Partir un problema grande en partes pequeñas. Ej.: organizar una fiesta = invitaciones + comida + juegos.</p></div>
+        <div class="tmini"><span class="em" aria-hidden="true">🔁</span><b>Patrones</b><p>Encontrar lo que se repite. Ej.: todas las tablas de multiplicar del 5 terminan en 0 o 5.</p></div>
+        <div class="tmini"><span class="em" aria-hidden="true">🔍</span><b>Abstracción</b><p>Quedarte con lo importante. Ej.: un mapa del metro no muestra cada árbol, solo las estaciones.</p></div>
+        <div class="tmini"><span class="em" aria-hidden="true">📋</span><b>Algoritmos</b><p>Escribir pasos claros y en orden. Ej.: una receta de cocina.</p></div>
+      </div>
+      <div class="actividad">
+        <div class="act-cab"><div class="act-cab-tit"><span class="tipo">Actividad · Ordena</span><h3>Arma el algoritmo</h3></div><span class="estado" data-estado="u4-algoritmo"></span></div>
+        <div class="act-cuerpo"><div id="act-algoritmo"></div></div>
+      </div>
+      <div class="explica una"><div class="texto">
+        <p>Las computadoras toman decisiones con <span class="resalta">condiciones</span>: «<b>SI</b> llueve <b>ENTONCES</b> llevo paraguas, <b>SI NO</b> llevo gorra». Una condición puede ser <b>verdadera</b> o <b>falsa</b>.</p>
+        <p>Podemos unir condiciones: con <b>Y</b> se tienen que cumplir las dos; con <b>O</b> basta con que se cumpla una.</p>
+      </div></div>
+      <div class="actividad">
+        <div class="act-cab"><div class="act-cab-tit"><span class="tipo">Actividad · Lógica</span><h3>¿Verdadero o falso?</h3></div><span class="estado" data-estado="u4-logica"></span></div>
+        <div class="act-cuerpo"><p class="act-instr">Revisa la condición de cada tarjeta y decide si es verdadera o falsa para ese objeto.</p><div id="act-logica"></div></div>
+      </div>
+    </section>
+
+    <section class="leccion" id="l4-2">
+      <div class="leccion-titulo"><span class="num">4.2</span><h2>Programación con bloques</h2></div>
+      <div class="explica una"><div class="texto">
+        <p>Con bloques visuales puedes programar sin escribir código: cada bloque es una instrucción y los acomodas en orden, como en Scratch. Un bloque especial es <b>repetir</b> (un <span class="resalta">bucle</span>): hace lo que tiene dentro varias veces y te ahorra muchos bloques.</p>
+        <p>Ayuda a Chispa a llegar a su batería. Mira abajo: ¡cada bloque se convierte en código de Python!</p>
+      </div></div>
+      <div class="actividad">
+        <div class="act-cab"><div class="act-cab-tit"><span class="tipo">Actividad · Programa</span><h3>El laberinto de Chispa</h3></div><span class="estado" data-estado="u4-laberinto"></span></div>
+        <div class="act-cuerpo"><p class="act-instr">Toca los bloques para armar el programa y presiona «Ejecutar». Para meter bloques dentro de «repetir», toca su zona naranja. Hay 5 niveles: cada uno vale una estrella.</p><div id="act-laberinto"></div></div>
+      </div>
+    </section>
+
+    <section class="leccion" id="l4-3">
+      <div class="leccion-titulo"><span class="num">4.3</span><h2>Tus primeros pasos en Python</h2></div>
+      <div class="explica">
+        <div class="texto">
+          <p><b>Python</b> es un lenguaje de programación que se escribe con palabras, casi como en inglés. Es uno de los lenguajes más usados para crear inteligencia artificial.</p>
+          <p>Aquí puedes escribir y ejecutar Python de verdad, sin instalar nada. Tienes 6 retos: cada uno vale una estrella.</p>
+          <p>Fíjate en la tabla: lo que hiciste con bloques también se puede escribir en Python.</p>
+        </div>
+        <figure class="figura">
+          <div class="tabla-wrap" style="border:0">
+            <table class="sesiones" style="min-width:0">
+              <thead><tr><th>Con bloques</th><th>En Python</th></tr></thead>
+              <tbody>
+                <tr><td>⬆ avanzar</td><td><code>avanzar()</code></td></tr>
+                <tr><td>🔁 repetir 3 veces</td><td><code>for i in range(3):</code></td></tr>
+                <tr><td>SI… ENTONCES… SI NO</td><td><code>if …:</code> / <code>else:</code></td></tr>
+                <tr><td>Decir «Hola»</td><td><code>print("Hola")</code></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <figcaption>Los bloques y el código son dos formas de dar las mismas instrucciones.</figcaption>
+        </figure>
+      </div>
+      <div class="actividad">
+        <div class="act-cab"><div class="act-cab-tit"><span class="tipo">Actividad · Código</span><h3>Laboratorio de Python</h3></div><span class="estado" data-estado="u4-python"></span></div>
+        <div class="act-cuerpo"><div id="act-python"></div></div>
+      </div>
+      <div class="sabias"><div data-chispa="sorpresa"></div><p><b>¿Sabías que…?</b> Python no se llama así por la serpiente: su creador le puso el nombre por un programa de comedia británico llamado Monty Python. Y se considera que Ada Lovelace escribió el primer programa para una máquina en 1843, ¡mucho antes de las computadoras modernas!</p></div>
+    </section>
+
+    <section class="leccion" id="k-u4">
+      <div class="leccion-titulo"><span class="num">Quiz</span><h2>Quiz de la unidad 4</h2><span class="estado" data-estado="u4-kahoot" style="margin-left:auto;font-weight:800;color:var(--tinta-suave)"></span></div>
+      <div class="kh-caja" data-kahoot="u4"></div>
+    </section>
+
+    <section class="leccion" id="g-u4">
+      <div class="leccion-titulo"><span class="num">Aa</span><h2>Palabras clave</h2></div>
+      <div class="glosario">
+        <div><b>Algoritmo</b><i>algorithm</i><p>Lista de pasos claros y en orden para resolver algo.</p></div>
+        <div><b>Descomposición</b><i>decomposition</i><p>Dividir un problema grande en partes pequeñas.</p></div>
+        <div><b>Abstracción</b><i>abstraction</i><p>Quedarse solo con la información importante.</p></div>
+        <div><b>Condición</b><i>condition</i><p>Pregunta que puede ser verdadera o falsa (if).</p></div>
+        <div><b>Bucle</b><i>loop</i><p>Instrucción que repite otras varias veces (repetir, for).</p></div>
+        <div><b>Variable</b><i>variable</i><p>Caja con nombre que guarda un dato.</p></div>
+        <div><b>Código</b><i>code</i><p>Instrucciones escritas en un lenguaje de programación.</p></div>
+        <div><b>Error (bug)</b><i>bug</i><p>Algo que hace que el programa no funcione como esperabas.</p></div>
+      </div>
+      <div class="desconectado"><span class="ico" aria-hidden="true">✂️</span><div><h4>Reto desconectado: el robot humano</h4>
+        <ol><li>Con cinta adhesiva hagan en el piso una cuadrícula de 4 × 4 y pongan un «tesoro» en una casilla.</li><li>Un equipo escribe el programa con tarjetas: avanzar, girar a la izquierda, girar a la derecha.</li><li>Un compañero es el robot y sigue el programa exactamente. Después agreguen una tarjeta «repetir» para usar menos tarjetas.</li></ol></div></div>
+    </section>
+  </div>
+</section>
+
+<!-- ===================================================== UNIDAD 5 -->
+<section class="vista unidad" id="v-unidad-5" style="--c:var(--u5)">
+  <div class="contenedor">
+    <header class="cabecera-unidad">
+      <div>
+        <div class="eyebrow">Unidad 5 · Ética y pensamiento crítico</div>
+        <h1>La IA es tu asistente, tú decides</h1>
+        <p class="lead">Aprende a verificar la información, a cuidar tus datos y a dejar que tu imaginación vaya primero.</p>
+        <div class="subnav" role="navigation" aria-label="Lecciones de la unidad 5">
+          <button data-ir="l5-1">5.1 Asistente, no reemplazo</button><button data-ir="l5-2">5.2 Verifica</button><button data-ir="l5-3">5.3 Uso responsable</button><button data-ir="k-u5">Quiz</button><button data-ir="g-u5">Glosario</button>
+        </div>
+      </div>
+      <div class="chispa-mini" data-chispa="feliz"></div>
+    </header>
+    <div class="objetivos"><h3>Al terminar podrás…</h3>
+      <ul><li>Explicar por qué la IA es un asistente y no debe pensar por ti.</li><li>Verificar información con fuentes confiables.</li><li>Decidir cuándo un uso de la IA es seguro y responsable.</li><li>Valorar tu propia imaginación y la de los demás.</li></ul>
+    </div>
+
+    <section class="leccion" id="l5-1">
+      <div class="leccion-titulo"><span class="num">5.1</span><h2>La IA es tu copiloto, no el piloto</h2></div>
+      <div class="explica">
+        <div class="texto">
+          <p>En un avión, el <b>piloto</b> toma las decisiones y el <b>copiloto</b> lo ayuda. Con la IA pasa lo mismo: <b>tú eres el piloto</b>. La IA te puede dar ideas, explicaciones y ayuda, pero tú piensas, eliges y decides.</p>
+          <p>Y hay algo que ninguna IA puede reemplazar: <span class="resalta">tu imaginación</span>. La IA mezcla cosas que ya vio en sus datos; tú puedes inventar algo que nunca ha existido.</p>
+          <p>Por eso, cuando tengas que crear algo, <b>primero piensa tú</b>. Después, si quieres, pide ayuda para mejorarlo.</p>
+        </div>
+        <figure class="figura">
+          <svg viewBox="0 0 420 220" role="img" aria-label="Tú eres el piloto y la IA es el copiloto">
+            <rect x="10" y="20" width="400" height="180" rx="22" fill="#eef3fc"/>
+            <circle cx="120" cy="100" r="54" fill="#fff" style="stroke:var(--c)" stroke-width="5"/>
+            <text x="120" y="96" text-anchor="middle" font-size="40">🧑‍✈️</text>
+            <text x="120" y="122" text-anchor="middle" font-size="14" font-weight="800" fill="#18213d">TÚ</text>
+            <text x="120" y="178" text-anchor="middle" font-size="14" font-weight="800" fill="#18213d">Piloto: piensa y decide</text>
+            <circle cx="300" cy="100" r="54" fill="#fff" stroke="#4d587a" stroke-width="3" stroke-dasharray="6 5"/>
+            <text x="300" y="98" text-anchor="middle" font-size="38">🤖</text>
+            <text x="300" y="122" text-anchor="middle" font-size="14" font-weight="800" fill="#18213d">IA</text>
+            <text x="300" y="178" text-anchor="middle" font-size="14" font-weight="800" fill="#18213d">Copiloto: ayuda y sugiere</text>
+            <path d="M184 100 H236" stroke="#4d587a" stroke-width="3" marker-end="url(#flecha3)"/>
+            <defs><marker id="flecha3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#4d587a"/></marker></defs>
+          </svg>
+          <figcaption>Tú das las instrucciones y tomas la decisión final.</figcaption>
+        </figure>
+      </div>
+      <div class="actividad">
+        <div class="act-cab"><div class="act-cab-tit"><span class="tipo">Actividad · Imagina</span><h3>Mi criatura inventada</h3></div><span class="estado" data-estado="u5-criatura"></span></div>
+        <div class="act-cuerpo"><p class="act-instr">Sin usar ninguna IA, inventa una criatura que nunca haya existido. Dale nombre, dibújala y escribe sus datos.</p><div id="act-criatura"></div></div>
+      </div>
+    </section>
+
+    <section class="leccion" id="l5-2">
+      <div class="leccion-titulo"><span class="num">5.2</span><h2>Verifica como detective</h2></div>
+      <div class="explica una"><div class="texto">
+        <p>Los chatbots no «saben» si algo es verdad: eligen, palabra por palabra, lo que es más probable que siga. Por eso a veces <b>inventan datos con mucha seguridad</b>. Antes de usar o compartir un dato importante, hazte las tres preguntas del detective:</p>
+      </div></div>
+      <div class="tarjetas-mini">
+        <div class="tmini"><span class="em" aria-hidden="true">🗣️</span><b>1. ¿Quién lo dice?</b><p>¿Es una fuente confiable, como un libro, una enciclopedia, un museo o un sitio oficial?</p></div>
+        <div class="tmini"><span class="em" aria-hidden="true">📚</span><b>2. ¿Otras fuentes dicen lo mismo?</b><p>Compara con al menos otra fuente confiable.</p></div>
+        <div class="tmini"><span class="em" aria-hidden="true">🤔</span><b>3. ¿Tiene sentido?</b><p>Usa lo que ya sabes. Si algo suena muy raro, investiga más o pregunta a tu maestro.</p></div>
+      </div>
+      <div class="actividad">
+        <div class="act-cab"><div class="act-cab-tit"><span class="tipo">Actividad · Verifica</span><h3>Caza la alucinación</h3></div><span class="estado" data-estado="u5-verifica"></span></div>
+        <div class="act-cuerpo"><div id="act-verifica"></div></div>
+      </div>
+    </section>
+
+    <section class="leccion" id="l5-3">
+      <div class="leccion-titulo"><span class="num">5.3</span><h2>Usar la IA con responsabilidad</h2></div>
+      <div class="explica una"><div class="texto">
+        <p>Usar bien la IA significa <b>cuidarte</b> (tus datos son tuyos), <b>respetar a los demás</b> (su cara, su voz y su trabajo), <b>ser honesto</b> (decir cuándo usaste IA) y <b>pensar en la justicia</b>: si una IA aprendió con datos que dejan fuera a algunas personas, puede tratarlas de forma injusta.</p>
+        <p>Y si algo que te muestra una IA te hace sentir mal o te confunde, <b>detente y cuéntaselo a un adulto de confianza</b>.</p>
+      </div></div>
+      <div class="actividad">
+        <div class="act-cab"><div class="act-cab-tit"><span class="tipo">Actividad · Decide</span><h3>El semáforo de la IA</h3></div><span class="estado" data-estado="u5-semaforo"></span></div>
+        <div class="act-cuerpo"><p class="act-instr">Para cada situación, elige: verde (adelante), amarillo (con cuidado) o rojo (alto).</p><div id="act-semaforo"></div></div>
+      </div>
+      <div class="actividad">
+        <div class="act-cab"><div class="act-cab-tit"><span class="tipo">Actividad · Compromiso</span><h3>Mi pacto y mi licencia de Explorador de la IA</h3></div><span class="estado" data-estado="u5-pacto"></span></div>
+        <div class="act-cuerpo"><p class="act-instr">Lee cada promesa, márcala si te comprometes y obtén tu licencia.</p><div id="act-pacto"></div></div>
+      </div>
+    </section>
+
+    <section class="leccion" id="k-u5">
+      <div class="leccion-titulo"><span class="num">Quiz</span><h2>Quiz de la unidad 5</h2><span class="estado" data-estado="u5-kahoot" style="margin-left:auto;font-weight:800;color:var(--tinta-suave)"></span></div>
+      <div class="kh-caja" data-kahoot="u5"></div>
+    </section>
+
+    <section class="leccion" id="g-u5">
+      <div class="leccion-titulo"><span class="num">Aa</span><h2>Palabras clave</h2></div>
+      <div class="glosario">
+        <div><b>Ética</b><i>ethics</i><p>Pensar qué es correcto y justo para todos.</p></div>
+        <div><b>Verificar</b><i>fact-check</i><p>Comprobar si una información es verdadera.</p></div>
+        <div><b>Fuente confiable</b><i>reliable source</i><p>Lugar de información serio: libros, enciclopedias, sitios oficiales.</p></div>
+        <div><b>Responsabilidad</b><i>responsibility</i><p>Responder por lo que haces y sus consecuencias.</p></div>
+        <div><b>Honestidad</b><i>honesty</i><p>Decir la verdad, también sobre cómo hiciste tu trabajo.</p></div>
+        <div><b>Imaginación</b><i>imagination</i><p>Tu capacidad de crear ideas nuevas. ¡Tu superpoder!</p></div>
+      </div>
+      <div class="desconectado"><span class="ico" aria-hidden="true">✂️</span><div><h4>Reto desconectado: debate del semáforo</h4>
+        <ol><li>Cada equipo recibe una tarjeta con una situación de uso de IA.</li><li>Levantan una tarjeta verde, amarilla o roja.</li><li>Un representante explica por qué. Los demás equipos pueden estar de acuerdo o no, con argumentos.</li></ol></div></div>
+    </section>
+  </div>
+</section>
+
+<!-- ===================================================== FINAL -->
+<section class="vista unidad" id="v-final" style="--c:var(--fin)">
+  <div class="contenedor">
+    <header class="cabecera-unidad">
+      <div>
+        <div class="eyebrow">Cierre del curso</div>
+        <h1>Gran quiz final</h1>
+        <p class="lead">Doce preguntas de todas las unidades. Juega solo o en equipos con todo el grupo.</p>
+      </div>
+      <div class="chispa-mini" data-chispa="sorpresa"></div>
+    </header>
+    <div class="kh-caja" data-kahoot="final"></div>
+    <div class="actividad">
+      <div class="act-cab"><div class="act-cab-tit"><span class="tipo">Proyecto final</span><h3>Cartel de IA responsable</h3></div></div>
+      <div class="act-cuerpo">
+        <p>En equipos, hagan un cartel para enseñar a otros grupos a usar la IA. Debe incluir:</p>
+        <ul style="margin:0;padding-left:22px;display:grid;gap:4px">
+          <li>Qué es la IA, explicado con un dibujo propio.</li>
+          <li>Un ejemplo de un buen prompt y uno malo.</li>
+          <li>Tres reglas para usar la IA de forma segura.</li>
+          <li>Una pista para detectar contenido falso.</li>
+          <li>Una frase sobre por qué su imaginación es importante.</li>
+        </ul>
+        <p class="aviso-sim">Si usan alguna imagen hecha con IA, deben escribir «creada con ayuda de IA».</p>
+      </div>
+    </div>
+    <div class="actividad">
+      <div class="act-cab"><div class="act-cab-tit"><span class="tipo">Tu progreso</span><h3>Estrellas por unidad</h3></div></div>
+      <div class="act-cuerpo">
+        <div class="mapa">
+          <div class="isla" style="--c:var(--u1)"><span class="n">Unidad 1</span><div class="barra-prog" data-prog-unidad="1"><i></i></div><span class="prog-txt"></span></div>
+          <div class="isla" style="--c:var(--u2)"><span class="n">Unidad 2</span><div class="barra-prog" data-prog-unidad="2"><i></i></div><span class="prog-txt"></span></div>
+          <div class="isla" style="--c:var(--u3)"><span class="n">Unidad 3</span><div class="barra-prog" data-prog-unidad="3"><i></i></div><span class="prog-txt"></span></div>
+          <div class="isla" style="--c:var(--u4)"><span class="n">Unidad 4</span><div class="barra-prog" data-prog-unidad="4"><i></i></div><span class="prog-txt"></span></div>
+          <div class="isla" style="--c:var(--u5)"><span class="n">Unidad 5</span><div class="barra-prog" data-prog-unidad="5"><i></i></div><span class="prog-txt"></span></div>
+        </div>
+        <div class="fila"><a class="btn" href="#unidad-5">Ir a mi licencia</a><button class="btn sec" id="reiniciar">Reiniciar mis estrellas</button></div>
+        <p class="aviso-sim">Las estrellas se guardan solo en este dispositivo y en este navegador.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================== GUÍA DOCENTE -->
+<section class="vista" id="v-docente" style="--c:var(--tinta)">
+  <div class="contenedor">
+    <div class="titulo-seccion"><h2 style="font-size:2.2rem">Guía para docentes</h2></div>
+    <div class="docente-grid">
+      <div class="tmini"><b>Ficha del curso</b>
+        <ul><li><b>Público:</b> 10–11 años (5.º y 6.º de primaria).</li><li><b>Duración:</b> 12 sesiones de 60 minutos.</li><li><b>Dispositivos:</b> iPad, tableta o computadora con navegador; proyector para los quizzes en equipo.</li><li><b>Sin cuentas:</b> no se registran alumnos ni se envían datos. El progreso se guarda en el navegador de cada dispositivo.</li></ul></div>
+      <div class="tmini"><b>Propósito</b>
+        <p>Que el alumnado comprenda qué es la IA y cómo aprende de los datos, la use como asistente para aprender y crear, desarrolle pensamiento computacional (lógica, bloques y Python) y adopte una postura crítica y ética: verificar, proteger sus datos y no sustituir su imaginación.</p></div>
+      <div class="tmini"><b>Quizzes estilo Kahoot</b>
+        <ul><li><b>Modo individual:</b> cada alumno en su dispositivo; puntos por rapidez y rachas.</li><li><b>Modo equipos:</b> proyecta el quiz; cada equipo levanta una tarjeta con la figura (triángulo, rombo, círculo, cuadro) y el docente marca su respuesta.</li><li><b>En Kahoot.com:</b> importa los archivos .xlsx de cada unidad (Agregar pregunta → Importar hoja de cálculo) o usa el botón «Copiar preguntas» dentro de cada quiz.</li></ul></div>
+      <div class="tmini"><b>Seguridad y herramientas reales</b>
+        <ul><li>Revisa los términos de uso de cada herramienta: muchas tienen una edad mínima (con frecuencia 13 años o más).</li><li>Para este grupo de edad se recomienda que el docente haga las demostraciones con herramientas reales, proyectando desde su propia cuenta.</li><li>Todas las actividades del curso funcionan sin herramientas externas. Python corre dentro de la página.</li></ul></div>
+    </div>
+
+    <div class="titulo-seccion"><h2>Plan de 12 sesiones</h2><p>Tiempos sugeridos en minutos.</p></div>
+    <div class="tabla-wrap">
+      <table class="sesiones">
+        <thead><tr><th>Sesión</th><th>Unidad</th><th>Actividades</th><th>Evidencia</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td><span class="u" style="background:var(--u1)"></span>1.1 ¿Qué es la IA?</td><td>Lluvia de ideas: ¿dónde han visto IA? (10) · Lectura guiada y diagrama (10) · «¿IA o no IA?» en parejas (20) · Reto desconectado «La máquina que adivina reglas» (20)</td><td>Puntaje de la clasificación</td></tr>
+          <tr><td>2</td><td><span class="u" style="background:var(--u1)"></span>1.2–1.3 Cómo aprende y por qué falla</td><td>Ciclo de aprendizaje (10) · «Entrena a Chispa» (15) · «Chispa y las manzanas» (10) · «Detective de errores» (10) · Quiz U1 en equipos (15)</td><td>Quiz U1</td></tr>
+          <tr><td>3</td><td><span class="u" style="background:var(--u2)"></span>2.1–2.2 Herramientas y prompts</td><td>Caja de herramientas y reglas de oro (15) · Constructor de prompts (20) · Reto desconectado «El robot literal» (25)</td><td>Prompt de 5/5</td></tr>
+          <tr><td>4</td><td><span class="u" style="background:var(--u2)"></span>2.3 ¿Ayuda o trampa?</td><td>Demostración del docente con una herramienta real (15) · «¿Cuál instrucción es mejor?» (10) · «¿Ayuda o no está bien?» (15) · Quiz U2 (15) · Cierre (5)</td><td>Quiz U2</td></tr>
+          <tr><td>5</td><td><span class="u" style="background:var(--u3)"></span>3.1–3.2 Imágenes con IA</td><td>«Del ruido a la imagen» (15) · Reto desconectado «Dictado de dibujo» (20) · «Estudio de imagen» y escritura de 3 prompts propios (25)</td><td>Prompts escritos en el cuaderno</td></tr>
+          <tr><td>6</td><td><span class="u" style="background:var(--u3)"></span>3.3 Multimedia y deepfakes</td><td>Explicación de deepfakes y pistas (10) · «Encuentra los 5 errores» (15) · «Crear con respeto» (15) · Quiz U3 (15) · Cierre (5)</td><td>Quiz U3</td></tr>
+          <tr><td>7</td><td><span class="u" style="background:var(--u4)"></span>4.1 Lógica y algoritmos</td><td>Cuatro pilares (10) · «Arma el algoritmo» (15) · Reto desconectado «Robot humano» (20) · «¿Verdadero o falso?» (15)</td><td>Algoritmo correcto</td></tr>
+          <tr><td>8</td><td><span class="u" style="background:var(--u4)"></span>4.2 Bloques visuales</td><td>Demostración del nivel 1 (5) · Laberinto niveles 1 a 5 (40) · Del bloque al código: leer el Python generado (15)</td><td>Niveles completados</td></tr>
+          <tr><td>9</td><td><span class="u" style="background:var(--u4)"></span>4.3 Python</td><td>Laboratorio de Python, retos 1 a 4 (35) · Retos 5 y 6 como extensión (10) · Quiz U4 (15)</td><td>Retos de Python y quiz U4</td></tr>
+          <tr><td>10</td><td><span class="u" style="background:var(--u5)"></span>5.1–5.2 Asistente y verificación</td><td>Piloto y copiloto (10) · «Mi criatura inventada» (20) · Tres preguntas del detective (5) · «Caza la alucinación» (25)</td><td>Ficha de criatura</td></tr>
+          <tr><td>11</td><td><span class="u" style="background:var(--u5)"></span>5.3 Uso responsable</td><td>«El semáforo de la IA» (15) · Reto desconectado «Debate del semáforo» (15) · Pacto y licencia (15) · Quiz U5 (15)</td><td>Licencia y quiz U5</td></tr>
+          <tr><td>12</td><td><span class="u" style="background:var(--fin)"></span>Cierre</td><td>Gran quiz final en equipos (20) · Proyecto «Cartel de IA responsable» (35) · Entrega de licencias (5)</td><td>Cartel por equipo</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="titulo-seccion"><h2>Rúbrica de evaluación</h2></div>
+    <div class="tabla-wrap">
+      <table class="sesiones rubrica">
+        <thead><tr><th>Criterio</th><th>En proceso</th><th>Logrado</th><th>Destacado</th></tr></thead>
+        <tbody>
+          <tr><td>Comprende qué es la IA y cómo aprende</td><td>Confunde la IA con cualquier aparato electrónico.</td><td>Explica que la IA aprende de datos, con un ejemplo.</td><td>Explica el sesgo y los errores de la IA con ejemplos propios.</td></tr>
+          <tr><td>Usa herramientas de IA de forma útil</td><td>Escribe instrucciones vagas de una o dos palabras.</td><td>Escribe prompts con 3 o 4 partes.</td><td>Escribe prompts completos y los mejora según el resultado.</td></tr>
+          <tr><td>Pensamiento computacional</td><td>Ordena pasos con ayuda.</td><td>Resuelve los niveles 1 a 4 del laberinto y los retos 1 a 4 de Python.</td><td>Usa bucles con soltura y agrega reglas nuevas a su bot.</td></tr>
+          <tr><td>Ética y pensamiento crítico</td><td>Identifica algunos riesgos con ayuda.</td><td>Verifica datos y protege su información personal.</td><td>Argumenta sus decisiones y propone reglas para su grupo.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="titulo-seccion"><h2>Material para preparar</h2></div>
+    <div class="docente-grid">
+      <div class="tmini"><b>Para los quizzes en equipo</b><p>Un juego de cuatro tarjetas por equipo: triángulo rojo, rombo azul, círculo amarillo y cuadro verde.</p></div>
+      <div class="tmini"><b>Retos desconectados</b><p>Tarjetas «GLORP / no GLORP» (U1), hojas para dibujar (U2 y U3), cinta adhesiva y tarjetas de flechas (U4), tarjetas de semáforo (U5).</p></div>
+      <div class="tmini"><b>Cartel final</b><p>Cartulinas, plumones y, si se desea, imágenes impresas creadas con IA por el docente (con su crédito).</p></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="pie"><p>Exploradores de la IA · Curso interactivo para primaria · Las actividades son simulaciones educativas y funcionan sin cuentas.</p></footer>
+
+<script src="js/datos-kahoot.js"></script>
+<script src="js/comun.js"></script>
+<script src="js/kahoot.js"></script>
+<script src="js/u1.js"></script>
+<script src="js/u2.js"></script>
+<script src="js/u3.js"></script>
+<script src="js/u4.js"></script>
+<script src="js/u5.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
